@@ -3,13 +3,16 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="16dp"
+    android:background="#eae2b7"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <ImageView
         android:id="@+id/image"
+        android:padding="5dp"
         android:layout_width="0dp"
         android:layout_height="200dp"
         android:scaleType="centerCrop"
+        android:background="@drawable/imageview_bg"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>
@@ -25,11 +28,12 @@
         android:ellipsize="end"
         android:layout_marginTop="12dp"
         android:textSize="18sp"
-        android:textColor="#212121"/>
+        android:textColor="#1C1C1C"/>
 
     <TextView
         android:id="@+id/author"
         android:layout_width="0dp"
+        android:textColor="#1C1C1C"
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
